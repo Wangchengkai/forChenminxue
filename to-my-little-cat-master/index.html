@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <title>love </title> -->
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<audio autoplay loop> 
+	<source src="bgm.mp3" type="audio/mp3">
+</audio>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<script type="text/javascript">
+				setTimeout(function() {
+			}, 30000);
+			</script>
+			<script type="text/javascript">
+				setTimeout(function() {
+			}, 30000);
+			</script>
+			<script type="text/javascript">
+				setTimeout(function() {
+			}, 30000);
+			</script>
+			Miss Yang～<br />
+			<span class=keyword> “是可爱小猫🐱！” </span><br />
+			好，可爱小猫～<br />
+			一想到我有女朋友，一想到我的女朋友是你，狗狗就开心的摇起了尾巴<br /><br />
+			
+			狗狗和你在一起之后发生了好多变化呢<br />
+			变直了，话也变多了<br />
+			也学会着在这段感情里<br />
+			<span class=keyword> 把你捧起 </span> 把自己放下 <br /><br />
+
+			爱情很<span class=keyword>简单</span><br />
+			简单到在平常生活里你感知不到它的存在<br />
+			爱情也很<span class=keyword>难得</span><br />
+			难得的是交谈时的默契、对彼此脾气的熟悉<br />
+			难得的是心有灵犀的欣喜、和探知对方内心世界时的好奇<br />
+			还有深夜把自己的身体交给枕边人过后安静的喘息<br /><br />
+
+			<hr />
+			hang1<br />
+			hang2<br />
+			hang3<br />
+			hang4<br />
+			
+			<hr />
+			就把这个网页作为临别的礼物<br />
+			献给我的Yang小猫叭💜 <br />
+			-- 永远爱你的Chen小狗🐶<br />
+
+		</div>
+		<div id="loveHeart">
+			<script type="text/javascript">
+
+				setTimeout(function() {
+			
+			}, 20000);
+			</script>
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					自从9月26日的那个秋夜，猫咪在我的生命里轻轻落下，已经过去了
+					<div id="elapseClock"></div>
+				</div>
+<!--			<div id="loveu">
+					<br/>
+					<div class="signature">- 钟先森</div>
+				</div>
+-->
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+
+together.setFullYear(2021, 8, 25);//1.23；3.29
+together.setHours(23);
+together.setMinutes(14);
+together.setSeconds(37);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<div style="text-align:center;clear:both">
+<p>Customized for my little cute cat, by <a href="https://github.com/renqibing" target="_blank">little dog<a /></p>
+<!-- <p>Copyright © 2017 - 2019. All Rights Reserved. Original Designed by <a href="https://github.com/enfangzhong" target="_blank">Viper<a /> </p> -->
+</div>
+</body>
+</html>
